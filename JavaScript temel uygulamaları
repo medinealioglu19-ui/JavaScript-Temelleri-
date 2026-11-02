@@ -1,0 +1,69 @@
+//Ekrana yazı yazdırma
+console.log("Merhaba Dünya!");
+console.log("JavaScript öğreniyorum.");
+console.log("Bilgisayar Programcılığı");
+
+//Değişkenler
+let isim = "Medine";
+let yas = 20;
+let bolum = "Bilgisayar Programcılığı";
+console.log(isim);
+console.log(yas);
+console.log(bolum);
+
+//Veri türleri
+let isim = "Medine";
+let yas = 20;
+let ortalama = 85.5;
+let ogrenciMi = true;
+console.log(typeof isim);
+console.log(typeof yas);
+console.log(typeof ortalama);
+console.log(typeof ogrenciMi);
+
+//Sabit değişkenler
+const okul = "Üniversite";
+const ders = "JavaScript";
+console.log(okul);
+console.log(ders);
+
+//Toplama işlemi
+let sayi1 = 10;
+let sayi2 = 20;
+let toplam = sayi1 + sayi2;
+console.log("Toplam: " + toplam);
+
+//Dört işlem
+let sayi1 = 20;
+let sayi2 = 5;
+console.log("Toplama: " + (sayi1 + sayi2));
+console.log("Çıkarma: " + (sayi1 - sayi2));
+console.log("Çarpma: " + (sayi1 * sayi2));
+console.log("Bölme: " + (sayi1 / sayi2));
+
+//Kullanıcıdan isim alma
+let isim = prompt("Adınızı giriniz:");
+console.log("Merhaba " + isim);
+
+//Girilen sayının karesini bulma
+let sayi = Number(prompt("Bir sayı giriniz:"));
+let kare = sayi * sayi;
+console.log("Sayının karesi: " + kare);
+
+//Girilen sayının küpünü bulma
+let sayi = Number(prompt("Bir sayı giriniz:"));
+let kup = sayi * sayi * sayi;
+console.log("Sayının küpü: " + kup);
+
+//İki sayının büyüğünü bulma
+let sayi1 = Number(prompt("Birinci sayıyı giriniz:"));
+let sayi2 = Number(prompt("İkinci sayıyı giriniz:"));
+if (sayi1 > sayi2) {
+    console.log("Büyük sayı: " + sayi1);
+}
+else if (sayi2 > sayi1) {
+    console.log("Büyük sayı: " + sayi2);
+}
+else {
+    console.log("Sayılar eşittir.");
+}
