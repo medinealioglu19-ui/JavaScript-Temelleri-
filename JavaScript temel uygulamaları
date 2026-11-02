@@ -88,3 +88,12 @@ else if (sayi < 0) {
 else {
     console.log("Sayı sıfırdır.");
 }
+
+//Not durumu
+let not = Number(prompt("Notunuzu giriniz:"));
+if (not >= 50) {
+    console.log("Dersi geçtiniz.");
+}
+else {
+    console.log("Dersten kaldınız.");
+}
