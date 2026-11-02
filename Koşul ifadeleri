@@ -1,0 +1,72 @@
+//Tek-Çift sayıyı bulma
+let sayi = Number(prompt("Bir sayı giriniz:"));
+if (sayi % 2 == 0) {
+    console.log("Sayı çifttir.");
+}
+else {
+    console.log("Sayı tektir.");
+}
+
+//Pozitif-Negatif sayıyı bulma
+let sayi = Number(prompt("Bir sayı giriniz:"));
+if (sayi > 0) {
+    console.log("Pozitif sayı");
+}
+else if (sayi < 0) {
+    console.log("Negatif sayı");
+}
+else {
+    console.log("Sayı sıfırdır.");
+}
+
+//Not hesaplama
+let not1 = Number(prompt("Birinci notu giriniz:"));
+let not2 = Number(prompt("İkinci notu giriniz:"));
+
+let ortalama = (not1 + not2) / 2;
+
+console.log("Ortalamanız: " + ortalama);
+
+if (ortalama >= 50) {
+    console.log("Geçtiniz.");
+}
+else {
+    console.log("Kaldınız.");
+}
+
+//Yaş kontrolü
+let yas = Number(prompt("Yaşınızı giriniz:"));
+if (yas >= 18) {
+    console.log("18 yaş ve üzerindesiniz.");
+}
+else {
+    console.log("18 yaşından küçüksünüz.");
+}
+
+//Switch-case ile gün bulma
+let gun = Number(prompt("1-7 arasında bir sayı giriniz:"));
+switch (gun) {
+    case 1:
+        console.log("Pazartesi");
+        break;
+    case 2:
+        console.log("Salı");
+        break;
+    case 3:
+        console.log("Çarşamba");
+        break;
+    case 4:
+        console.log("Perşembe");
+        break;
+    case 5:
+        console.log("Cuma");
+        break;
+    case 6:
+        console.log("Cumartesi");
+        break;
+    case 7:
+        console.log("Pazar");
+        break;
+    default:
+        console.log("Geçersiz sayı!");
+}
