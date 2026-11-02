@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yapılacaklar Listem</title>
+
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
+        .kutu {
+            background-color: white;
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        input {
+            padding: 10px;
+            width: 90%;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        li {
+            margin: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="kutu">
+        <h1>Yapılacaklar Listem</h1>
+
+        <input type="text" id="gorev" placeholder="Yeni görev yaz...">
+
+        <button onclick="gorevEkle()">Görev Ekle</button>
+
+        <ul id="liste"></ul>
+    </div>
+
+    <script>
+        let gorevler = [];
+
+        function gorevEkle() {
+            let gorev = document.getElementById("gorev").value;
+
+            if (gorev == "") {
+                alert("Lütfen bir görev yazınız!");
+            } else {
+                gorevler.push(gorev);
+                listeyiGoster();
+                document.getElementById("gorev").value = "";
+            }
+        }
+
+        function listeyiGoster() {
+            let liste = document.getElementById("liste");
+
+            liste.innerHTML = "";
+
+            for (let i = 0; i < gorevler.length; i++) {
+                let eleman = document.createElement("li");
+
+                eleman.innerHTML = gorevler[i];
+
+                let silButonu = document.createElement("button");
+                silButonu.innerHTML = "Sil";
+
+                silButonu.onclick = function() {
+                    gorevler.splice(i, 1);
+                    listeyiGoster();
+                };
+
+                eleman.appendChild(silButonu);
+                liste.appendChild(eleman);
+            }
+        }
+    </script>
+
+</body>
+</html>
