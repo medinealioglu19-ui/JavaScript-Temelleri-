@@ -67,3 +67,24 @@ else if (sayi2 > sayi1) {
 else {
     console.log("Sayılar eşittir.");
 }
+
+//Tek-Çift sayıyı bulma
+let sayi = Number(prompt("Bir sayı giriniz:"));
+if (sayi % 2 == 0) {
+    console.log("Sayı çifttir.");
+}
+else {
+    console.log("Sayı tektir.");
+}
+
+//Pozitif-Negatif sayıyı bulma
+let sayi = Number(prompt("Bir sayı giriniz:"));
+if (sayi > 0) {
+    console.log("Pozitif sayı");
+}
+else if (sayi < 0) {
+    console.log("Negatif sayı");
+}
+else {
+    console.log("Sayı sıfırdır.");
+}
