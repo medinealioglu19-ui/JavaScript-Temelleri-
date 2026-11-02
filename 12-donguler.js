@@ -15,6 +15,12 @@ for (let i = 1; i <= 10; i++) {
 }
 console.log("Toplam: " + toplam);
 
+//Geriye doğru sayma
+for (let i = 10; i >= 1; i--) {
+    console.log(i);
+}
+console.log("Bitti!");
+
 
 //while döngüsü
 let sayi = 1;
